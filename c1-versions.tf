@@ -19,7 +19,7 @@ provider "azurerm" {
   tenant_id       = "530c48cf-744a-4225-9c0f-c349cf5e9c65"
 }
 
-Random String Resource
+#Random String Resource
 resource "random_string" "myrandom" {
   length = 6
   upper = false 
