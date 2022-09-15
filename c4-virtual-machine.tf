@@ -34,37 +34,4 @@ resource "azurerm_virtual_machine" "linux" {
   tags = {
     environment = "staging"
   }
-  
-  
-    provisioner "file" {
-            connection {
-    type     = "ssh"
-    user     = "testadmin"
-    password = "Password1234!"
-    host     = azurerm_public_ip.mypublicip.ip_address
-  }
-    source      = "bash.sh"
-    destination = "/home/testadmin/bash.sh"
-  }
-
-   provisioner "remote-exec" {
-    connection {
-    type     = "ssh"
-    user     = "testadmin"
-    password = "Password1234!"
-    host     = azurerm_public_ip.mypublicip.ip_address
-  }
-    inline = [
-      "ls -a",
-      "mkdir thisiscreatedusingtf",
-      "sudo chmod +x bash.sh",
-      "sudo ./bash.sh"
- 
-    ]
-   }
-
-  provisioner "local-exec" {
-    command = "echo ${azurerm_public_ip.mypublicip.ip_address} >> private_ips.txt"
-  }
-} 
 }
