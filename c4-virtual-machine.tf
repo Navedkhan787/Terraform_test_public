@@ -1,7 +1,7 @@
 resource "azurerm_virtual_machine" "linux" {
   name                  = "provisioner_test"
   location              = azurerm_resource_group.myrg.location
-  resource_group_name   = azurerm_resource_group.myrg.id
+  resource_group_name   = azurerm_resource_group.myrg.name
   network_interface_ids = [azurerm_network_interface.myvmnic.id]
   vm_size               = "Standard_DS1_v2"
 
