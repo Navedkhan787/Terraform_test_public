@@ -12,11 +12,12 @@ terraform {
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
-
-  subscription_id = "ff9def2a-54b2-4ab1-ae49-d96539f8fd57"
-  client_id       = "4a543087-2b24-45ff-b3b1-8657e0fca260"
-  client_secret   =  "gc-8Q~1xAQXZQIEfOtz4F-e-I2F-TTJ0iw3NKbL-"
-  tenant_id       = "530c48cf-744a-4225-9c0f-c349cf5e9c65"
+  
+  subscription_id = "2b0bc876-a197-45f4-a31b-70b8167b9e50"
+  client_id       = "3660c1e1-2165-49e8-8457-98e2a2e277fa"
+  client_secret   =  "AHf8Q~fULuMH52duCAGa-jLJl35ee4vNveMuDaIo"
+  tenant_id       = "f55577d5-c08a-401f-9604-4bc6c5f28dc8"   
+  
 }
 
 #Random String Resource
