@@ -1,4 +1,4 @@
-resource "azurerm_virtual_machine" "linux" {
+/*resource "azurerm_virtual_machine" "linux" {
   name                  = "provisioner_test"
   location              = azurerm_resource_group.myrg.location
   resource_group_name   = azurerm_resource_group.myrg.name
