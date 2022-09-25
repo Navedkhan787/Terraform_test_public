@@ -67,3 +67,4 @@
     command = "echo ${azurerm_public_ip.mypublicip.ip_address} >> private_ips.txt"
   }
 }
+*/
