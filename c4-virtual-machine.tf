@@ -1,3 +1,4 @@
+/*
 resource "azurerm_virtual_machine" "linux" {
   name                  = "provisioner_test"
   location              = azurerm_resource_group.myrg.location
@@ -67,3 +68,4 @@ resource "azurerm_virtual_machine" "linux" {
     command = "echo ${azurerm_public_ip.mypublicip.ip_address} >> private_ips.txt"
   }
 }
+*/
