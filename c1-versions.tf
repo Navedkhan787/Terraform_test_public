@@ -19,11 +19,11 @@ provider "azurerm" {
   tenant_id       = "1c660b68-8c5f-4a39-a6cd-caa9ad322b88"    
 }
 
-#Random String Resource
+/*#Random String Resource
 resource "random_string" "myrandom" {
   length = 6
   upper = false 
   special = false
   numeric = false   
-}
+} */
 
